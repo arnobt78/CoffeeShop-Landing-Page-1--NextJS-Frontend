@@ -84,12 +84,12 @@ export const metadata: Metadata = {
   authors: [
     {
       name: "Arnob Mahmud",
-      url: "https://arnob-mahmud.vercel.app/",
+      url: "https://www.arnobmahmud.com",
     },
   ],
   creator: "Arnob Mahmud",
   publisher: "Arnob Mahmud",
-  metadataBase: new URL("https://coffeeshop-arnob.vercel.app"),
+  metadataBase: new URL("https://coffeeshop-ui-1.vercel.app"),
   alternates: {
     canonical: "/",
   },
@@ -98,7 +98,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US", // Language and region
-    url: "https://coffeeshop-arnob.vercel.app", // Canonical URL
+    url: "https://coffeeshop-ui-1.vercel.app", // Production URL (see README Live Demo)
     siteName: "Coffee & Joy - Zenbrew",
     title: "Coffee & Joy - Zenbrew | Premium Coffee Shop Experience",
     description:
@@ -145,6 +145,11 @@ export const metadata: Metadata = {
     // yandex: "your-yandex-verification-code",
   },
   category: "Food & Beverage",
+  applicationName: "Coffee & Joy - Zenbrew",
+  // Contact for site/author (SEO and discovery)
+  other: {
+    contact: "contact@arnobmahmud.com",
+  },
 };
 
 /**

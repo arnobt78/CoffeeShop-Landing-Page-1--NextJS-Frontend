@@ -17,8 +17,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-// Swiper modules - Navigation enables prev/next arrow buttons
-import { Navigation } from "swiper/modules";
+// Swiper modules - Navigation enables prev/next arrow buttons, Autoplay for auto-slide
+import { Navigation, Autoplay } from "swiper/modules";
 
 // React Icons - Quote icon for testimonials
 import { IoMdQuote } from "react-icons/io";
@@ -52,7 +52,12 @@ const Testimonials = () => {
         {/* Swiper Carousel Component */}
         {/* navigation={true}: Shows prev/next arrow buttons */}
         {/* modules={[Navigation]}: Enables navigation functionality */}
-        <Swiper navigation={true} modules={[Navigation]} className="h-[400px]">
+        <Swiper
+          navigation={true}
+          modules={[Navigation, Autoplay]}
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          className="h-[400px]"
+        >
           {testimonials.map((person, index) => (
             // Each testimonial is a slide
             <SwiperSlide key={index} className="w-full h-full">
